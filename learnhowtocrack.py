@@ -36,7 +36,6 @@ elif user == 2:
   wordlistpath = input("entre your wordlist path:")
 with open(wordlistpath,'r') as list:
   for i in list:
-    time.sleep(0.2)
     x = i.rstrip('\n')
     encoding = hashlib.md5(x.encode())
     compare = encoding.hexdigest()
